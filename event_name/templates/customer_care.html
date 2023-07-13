@@ -1,0 +1,156 @@
+{% extends 'layout.html' %}
+
+{% block page %}
+
+<div class="col-md-10">
+    <div class="container-fluid bg-light py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Customer Care</h1>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='customer_care.jpg') }}" alt="Customer care image" 
+                        class="img-fluid rounded shadow-lg mb-4"
+                        style="height: 110%;
+                               width: 110%;"
+                        >
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">We're here to help</h2>
+                    <p class="lead">Our customer care team is always available to assist you with any questions or
+                        concerns you may have. We pride ourselves on providing excellent customer service and will do
+                        our best to ensure your satisfaction.</p>
+                    <p class="lead">We're available Monday through Friday from 9:00 AM to 5:00 PM IST.</p>
+                    <div class="mt-5">
+                        <a href="#" class="btn btn-lg btn-primary me-3">Contact Us</a>
+                        <a href="#" class="btn btn-lg btn-outline-primary">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">When to contact us</h2>
+                    <p class="lead">You can contact us anytime you have a question or concern about our products or
+                        services. Some common reasons to contact us include:</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow-lg h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Help with your account</h5>
+                                    <p class="card-text">If you need assistance with your account, we're here to help.
+                                        Contact us and we'll get back to you as soon as possible.</p>
+                                    <a href="#" class="btn btn-primary">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow-lg h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Question about our services</h5>
+                                    <p class="card-text">If you have a question about our services, don't hesitate to
+                                        contact us. We're happy to help in any way we can.</p>
+                                    <a href="#" class="btn btn-primary">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow-lg h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Technical support</h5>
+                                    <p class="card-text">If you're experiencing technical issues, contact us and we'll
+                                        do our best to resolve the issue as quickly as possible.</p>
+                                    <a href="#" class="btn btn-primary">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow-lg h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Provide feedback and suggestions</h5>
+                                    <p class="card-text">We're always looking for ways to improve our products and
+                                        services. If you have any feedback or suggestions, please let us know.</p>
+                                    <a href="#" class="btn btn-primary">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow-lg h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Issue that needs to be resolved</h5>
+                                    <p class="card-text">If you have an issue that needs to be resolved, please don't
+                                        hesitate to contact us. We'll do our best to address the issue as quickly as
+                                        possible.</p>
+                                    <a href="#" class="btn btn-primary">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-fluid bg-light py-5">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-6">
+                            <img src="{{ url_for('static', filename='how_to_contact.jpeg') }}" alt="Customer care image" 
+                                class="img-fluid rounded shadow-lg mb-4"
+                                style="height: 100%;
+                                       width: 100%;">
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="text-center mb-5">How to contact us</h1>
+                            <p>You can contact us by phone, email, or through our website's contact form.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-telephone"></i>+91 012-345-6789</li>
+                                <li><i class="bi bi-envelope"></i> <a href="#">customercare@ourcompany.com</a></li>
+                                <li><i class="bi bi-file-earmark-text"></i> <a href="#">Contact form</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title">Response Time</h2>
+                  <p class="card-text">We understand the importance of timely responses to customer inquiries.</p>
+                  <p class="card-text">Our goal is to respond to all customer inquiries within 24 hours. However, during busy periods it may take us longer to get back to you. Please be patient and rest assured that we will do our best to address your concerns as quickly as possible.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title">What to Expect</h2>
+                  <p class="card-text">At our company, we pride ourselves on providing excellent customer service. When you contact our customer care team, you can expect a friendly and helpful response from one of our representatives.</p>
+                  <p class="card-text">We will do our best to assist you with your inquiry and ensure that you have a positive experience with our company. If you have any concerns or are not satisfied with our response, please let us know and we will do our best to address your concerns and improve our service.</p>
+                  <p class="card-text">Thank you for choosing our company. We appreciate your business and look forward to assisting you.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+    
+      
+</div>
+
+</br></br>
+{% endblock %}

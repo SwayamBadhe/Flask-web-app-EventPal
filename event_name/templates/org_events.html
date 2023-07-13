@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1 class="mb-3"> Events by {{ event_O.author.username }} ({{ events.total }})</h1>
+    {% for event in events.items %}
+        <article class="media content-section">
+            <div class="d-flex align-items-stretch">
+                <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + event.author.image_file) }}">
+            </div>
+            <div class="d-flex flex-column bd-highlight mb-3">
+                <div class="media-body">
+                    <div class="article-metadata">
+                      <a class="mr-2" href="{{ url_for('org_events', username=event.author.username) }}">{{ event.author.username }}</a>
+                      <small class="text-muted">{{ event.date_posted.strftime('%Y-%m-%d') }}</small>
+                    </div>
+                    <h2><a class="article-title" href="{{ url_for('event', event_id=event.id) }}">{{ event.title }}</a></h2>
+                   
+                </div>
+                    <img
+                        src="{{ url_for('static', filename='event_pics/' + event.image_file) }}"
+                        style="object-fit: fill; width: 500px; height: 250px;">   
+
+                        <p class="article-content">{{ event.description }}</p>
+            </br>
+                {% if current_user.role == 'user' %}
+                <div class="d-flex bd-highlight mb-3">
+                    <div class=" p-2 bd-highlight ">
+                        <a class="btn btn-primary mb-2" href="{{ url_for('enroll', user_id=user.id, event_id=event.id) }}">Enroll</a>
+                    </div>
+                    <!-- <div class=" p-2 bd-highlight ">
+                        <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">Not instrested</button>
+                    </div> -->
+                </div>
+                {% endif %}
+            </div>            
+        </article>
+    {% endfor %}
+    </br>
+    <div style="text-align: end;">
+        <div class="pagination">
+            <a href="{{ url_for('org_events', username=event_O.author.username, page=1) }}">&laquo;</a>
+        {% for page_num in events.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+            {% if page_num %}
+                {% if events.page == page_num %}
+                    <a class="active" href="{{ url_for('org_events', username=event_O.author.username, page=page_num) }}">{{ page_num }} </a>
+                {% else %}
+                    <a href="{{ url_for('org_events', username=event_O.author.username, page=page_num) }}">{{ page_num }} </a>
+                {% endif %}
+                
+            {% else %}
+                ...
+            {% endif %}        
+        {% endfor %}
+            <a href="{{ url_for('org_events', username=event_O.author.username, page=events.pages) }}">&raquo;</a>
+        </div>
+    </div>
+    </br></br></br>
+{% endblock content %}
+
+

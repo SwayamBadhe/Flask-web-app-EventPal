@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h3>My enrollments</h3>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Date of Event</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for enrolled in my_enrolled %}
+                    <tr>
+                        <th scope="row">{{ loop.index }}</th>
+                        <td>{{ enrolled.event.title }}</td>
+                        <td>{{ enrolled.event.date_of_event }}</td> <!--change this to the date of event-->
+                        <td>
+                          <button type="button" class="btn btn-secondary btn-sm m-1" data-toggle="modal" data-target="#deleteModal">Unenroll</button>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+      </div>
+
+      <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="deleteModalLabel">Unenroll?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Are you sure you want to unenroll?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <form action="{{ url_for('unenroll', user_id=current_user.id) }}" method="POST">
+                <input class="btn btn-danger" type="submit" value="Unenroll">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+{% endblock content %}
+
+

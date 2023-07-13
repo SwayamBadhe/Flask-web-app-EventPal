@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<button class="btn btn-block" href="#" data-toggle="modal" data-target="#popup-ad"
+  style="background-color: #e65f80;"  
+  
+>Latest Products</button>
+</br>
+<style>
+  header {
+      background-color: #8d8741;
+      color: #ac7c7c;
+      padding: 20px;
+      text-align: center;
+  }
+  h1 {
+      margin-top: 0;
+  }
+  .container {
+      /* max-width: 1000px; */
+      margin: 0 auto;
+      padding: 20px;
+  }
+</style>
+<header>
+  <h1>About Us</h1>
+</header>
+<div class="container">
+  <h2>Who we are</h2>
+  <p>We are a small team of developers and designers who love creating beautiful and functional websites and web applications.</p>
+
+  <h2>What we do</h2>
+  <p>We specialize in creating custom websites and web applications for businesses and organizations of all sizes. We work closely with our clients to understand their unique needs and goals, and then create a solution that meets those needs and exceeds their expectations.</p>
+
+  <h2>Our team</h2>
+  <p>Our team consists of experienced developers and designers who are passionate about creating high-quality websites and web applications. We are always learning and growing, and we strive to stay up-to-date with the latest technologies and trends in our industry.</p>
+
+  <h2>Contact Us</h2>
+  <p>If you're interested in working with us, or if you just have a question or comment, please feel free to contact us at <a href="mailto:info@ourcompany.com">info@ourcompany.com</a>.</p>
+</div>
+
+<div class="modal fade" id="popup-ad"  tabindex="-1" role="dialog" aria-labelledby="ad-modal-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ad-modal-label">Check out our latest product!</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="../static/add_del.jpg" alt="Advertisement" class="img-fluid">
+          <p>Discover the benefits of partnering with us! From exclusive industry events to successful collaborations, 
+             our partners enjoy a wide range of opportunities that can help drive their success. Click the button below to learn more
+          </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

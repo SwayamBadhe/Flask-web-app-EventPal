@@ -1,0 +1,52 @@
+Date : 2023-05-24 14:10:53
+Directory : d:\PBL_test\event_name
+Total : 23 files,  1616 codes, 289 comments, 284 blanks, all 2189 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| HTML     |         17 |      1,071 |         84 |        100 |      1,255 |
+| Python   |          5 |        349 |        193 |        136 |        678 |
+| CSS      |          1 |        196 |         12 |         48 |        256 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                  | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                     |         23 |      1,616 |        289 |        284 |      2,189 |
+| . (Files)                                             |          5 |        349 |        193 |        136 |        678 |
+| static                                                |          1 |        196 |         12 |         48 |        256 |
+| templates                                             |         17 |      1,071 |         84 |        100 |      1,255 |
++-------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                              | language | code       | comment    | blank      | total      |
++-------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\PBL_test\event_name\__init__.py                    | Python   |         21 |          0 |          7 |         28 |
+| d:\PBL_test\event_name\forms.py                       | Python   |         50 |         79 |         18 |        147 |
+| d:\PBL_test\event_name\models.py                      | Python   |         41 |         47 |         26 |        114 |
+| d:\PBL_test\event_name\routes.py                      | Python   |        237 |         52 |         83 |        372 |
+| d:\PBL_test\event_name\static\main.css                | CSS      |        196 |         12 |         48 |        256 |
+| d:\PBL_test\event_name\templates\about.html           | HTML     |         55 |          1 |          8 |         64 |
+| d:\PBL_test\event_name\templates\account.html         | HTML     |         62 |          0 |          6 |         68 |
+| d:\PBL_test\event_name\templates\base.html            | HTML     |         29 |         35 |          3 |         67 |
+| d:\PBL_test\event_name\templates\create_event.html    | HTML     |         62 |          0 |          0 |         62 |
+| d:\PBL_test\event_name\templates\customer_care.html   | HTML     |        149 |          0 |          7 |        156 |
+| d:\PBL_test\event_name\templates\email.html           | HTML     |         26 |          0 |          2 |         28 |
+| d:\PBL_test\event_name\templates\enrolled_events.html | HTML     |         49 |          0 |          6 |         55 |
+| d:\PBL_test\event_name\templates\enrollment.html      | HTML     |         36 |          0 |          8 |         44 |
+| d:\PBL_test\event_name\templates\event.html           | HTML     |         55 |          3 |          5 |         63 |
+| d:\PBL_test\event_name\templates\event_info.html      | HTML     |         78 |          3 |          6 |         87 |
+| d:\PBL_test\event_name\templates\event_status.html    | HTML     |         32 |          0 |          8 |         40 |
+| d:\PBL_test\event_name\templates\home.html            | HTML     |         67 |          3 |          8 |         78 |
+| d:\PBL_test\event_name\templates\layout.html          | HTML     |        106 |         33 |          8 |        147 |
+| d:\PBL_test\event_name\templates\login.html           | HTML     |         50 |          0 |          5 |         55 |
+| d:\PBL_test\event_name\templates\org_events.html      | HTML     |         51 |          3 |          7 |         61 |
+| d:\PBL_test\event_name\templates\register.html        | HTML     |         89 |          0 |          6 |         95 |
+| d:\PBL_test\event_name\templates\search.html          | HTML     |         75 |          3 |          7 |         85 |
+| d:\PBL_test\event_name\utils.py                       | Python   |          0 |         15 |          2 |         17 |
+| Total                                                 |          |      1,616 |        289 |        284 |      2,189 |
++-------------------------------------------------------+----------+------------+------------+------------+------------+

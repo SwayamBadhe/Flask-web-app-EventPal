@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block page %}
+    <div class="container-fluid py-5"
+    style="background-color: #c9e3f9;"
+    >
+    <div class="row">
+    <div class="col-md-6 d-flex align-items-center">
+        <div class="px-5 py-3">
+            <h1 class="mb-4" 
+                style="color: #333;">
+                Find and Book Your Next Event
+            </h1>
+            <p class="lead mb-5" 
+            style="color: #555;
+            font-size: 1.2rem;">
+            Discover events that match your interests and book your tickets all in one place.
+            </p>    
+            <div class="d-grid gap-2">
+            <a href="{{ url_for('login') }}" class="btn btn-lg btn-outline-primary">Login</a>
+            <a href="{{ url_for('register') }}" class="btn btn-lg btn-primary">Register</a>
+            </div>                  
+        </div>
+    </div>
+    <div class="col-md-6">
+        <img src="{{ url_for('static', filename='home.jpg') }}" class="img-fluid" alt="People enjoying an event">
+    </div>
+    </div>
+    </div>
+
+  <!-- <div class="container py-5">
+    <h2 class="text-center mb-5">Popular Events</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Summer Festival</h5>
+            <p class="card-text">Join us for our annual summer festival featuring live music, food trucks, and family-friendly activities.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Wine Tasting</h5>
+            <p class="card-text">Sample some of the finest wines from local vineyards and learn about the art of wine tasting.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Art Walk</h5>
+            <p class="card-text">Explore local art galleries and studios on our annual art walk.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   -->
+
+{% endblock %}

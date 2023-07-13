@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 18px; line-height: 1.5; padding: 20px;">    
+    {% if category == 'enroll' %}
+        <p>Dear {{ user.username }},</p>
+        <p>We are excited to inform you that you have successfully enrolled in {{ event.title }}!</p>
+        <p>Thank you for choosing to be a part of this event. We look forward to seeing you there and having a great time together.</p>
+        <p>If you have any questions or concerns, please don't hesitate to reach out to us. We are here to assist you in any way we can.</p>
+        <p>Best regards,</p>
+        <p>The {{ event.author.username }} Team</p>
+        
+    {% elif category == 'unenroll' %}
+        <p>Dear {{ user.username }},</p>
+        <p>We are sorry to inform you that you have unenrolled from {{ event.title }}.</p>
+        <p>We hope you can join us for our future events!</p>
+        <p>If you have any questions or concerns, please don't hesitate to reach out to us. We are here to assist you in any way we can.</p>
+        <p>Best regards,</p>
+        <p>The {{ event.author.username }} Team</p>
+    {% endif %}
+
+</body>
+</html>
