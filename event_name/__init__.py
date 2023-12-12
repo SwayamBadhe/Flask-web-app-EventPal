@@ -26,4 +26,7 @@ login_manager = LoginManager(app)
 login_manager.login_view = 'login'   #------------------
 login_manager.login_message_category = 'info'
 
+if os.environ.get('FLASK_ENV') != 'development':
+    app.config['DEBUG'] = False
+
 from event_name import routes
